@@ -1,0 +1,37 @@
+{
+  "name": "@erictik/pbs",
+  "version": "1.0.0",
+  "description": "protobuf package ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "grpc_tools_node_protoc  --plugin=protoc-gen-ts=./node_modules/.bin/protoc-gen-ts  --ts_out=grpc_js:./  --js_out=import_style=commonjs:./  --grpc_out=grpc_js:./ -I. ./*.proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erictik/pbs.git"
+  },
+  "files": [
+    "*.js",
+    "*.ts",
+    "*.proto",
+    "*.md"
+  ],
+  "keywords": [
+    "protobuf",
+    "grpc"
+  ],
+  "author": "Eric Yang <yanghao@10d.xin>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erictik/pbs/issues"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/erictik"
+  },
+  "homepage": "https://github.com/erictik/pbs#readme",
+  "devDependencies": {
+    "grpc_tools_node_protoc_ts": "^5.3.2",
+    "grpc-tools": "^1.11.3"
+  }
+}

@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-message CommonResponse{
-  int32 code = 1;
-  string message = 2;
-  bytes data = 3;
-}

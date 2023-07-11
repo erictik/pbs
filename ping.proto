@@ -1,8 +1,8 @@
 syntax = "proto3";
 import "google/protobuf/empty.proto";
-package opb;
+package pbs;
 
-option go_package = ".;opb";
+option go_package = ".;pbs";
 
 message PongResponse{
   string message = 1;

@@ -3,7 +3,6 @@ import "google/protobuf/empty.proto";
 package pbs;
 
 option go_package = ".;pbs";
-
 message PongResponse{
   string message = 1;
 }

@@ -26,7 +26,7 @@ jobs:
           create_branch: true
           commit_message: "Update generated code"
       - name: GH Release
-        uses: softprops/action-gh-release@v0.1
+        uses: softprops/action-gh-release@v0.1.15
         with:
           tag_name: ${{ env.APPVERSION  }}
           target_commitish: ${{ steps.commit.outputs.commit_hash }}
